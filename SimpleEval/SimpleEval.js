@@ -148,7 +148,6 @@ const api = {
     const setTextLength = (text, limit = 4000) => text.length > limit ? text.substring(0, limit - 3) + "..." : text;
 
     if (Array.isArray(logs) && logs.length > 0) {
-      console.log(logs, logs[0])
       embeds.push(
         Utils.setupMessage({
           configPath: lang.EvalLogs,
